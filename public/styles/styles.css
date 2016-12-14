@@ -1,0 +1,153 @@
+/*
+  CIS 197 Final Project- 2048
+  Author - Rachel Chan
+*/
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #faf8ef;
+}
+
+button {
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: Arial, sans-serif;
+  background: #8f7a66;
+  border-radius: 3px;
+  color: white;
+  position: inherit;
+  margin-bottom: 10px;
+  margin-left: 44%;
+  border:5px solid #8f7a66;
+}
+
+button:hover {
+  cursor: pointer;
+  border:5px solid #bbada0;
+}
+
+button:focus {outline:0;}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 53px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.container {
+  min-height: 432px;
+  min-width: 576px;
+}
+
+.board-component {
+  margin: auto;
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  border: 5px solid #ccc;
+}
+
+.cell {
+  display:block;
+  border-radius:3px;
+  float:left;
+  border:10px solid #bbada0;
+  height:90px;
+  width:90px;
+  margin-left:-5px;
+  margin-top:-5px;
+  margin-right:-5px;
+  margin-bottom: -5px;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 53px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  font-family: Arial, sans-serif;
+}
+
+.cell {
+  z-index: 2;
+  background-color: rgba(238, 228, 218, 0.35);
+  width: 90px;
+  height: 90px;
+}
+
+.cell.two {
+  background-color:#eee4da;
+  color: #776e65;
+}
+
+.cell.four {
+  background-color:#ede0c8;
+  color: #776e65;
+}
+
+.cell.eight {
+  background-color:#f2b179;
+  color: white;
+}
+
+.cell.sixteen {
+  background-color: #f59563;
+  color: white;
+}
+
+.cell.three_two {
+  background-color: #f67c5f;
+  color: white;
+}
+
+.cell.sixtyfour {
+  background-color: #f65e3b;
+  color: white;
+}
+
+.cell.one_two_eight {
+  background-color: #edcf72;
+  color: white;
+  font-size: 48px;
+}
+
+.cell.two_five_six {
+  background-color: #edcc61;
+  color: white;
+  font-size: 48px;
+}
+
+.cell.five_one_two {
+  background-color: #edc850;
+  color: white;
+  font-size: 48px;
+}
+
+.cell.one_zero_two_four {
+  background-color: #edc53f;
+  color: white;
+  font-size: 40px;
+}
+
+.cell.two_zero_four_eight {
+  background-color: #5583ff;
+  color: white;
+  font-size: 40px;
+}
+
+.cell.four_zero_nine_six {
+  background-color: #7d55ff;
+  color: white;
+  font-size: 40px;
+}
+
+.your-score {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+}
